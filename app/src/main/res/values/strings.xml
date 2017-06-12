@@ -1,0 +1,21 @@
+<resources xmlns:color="http://schemas.android.com/tools">
+    <string name="app_name">ACH</string>
+    <string name="skip">SKIP</string>
+    <string name="signup">SIGN UP</string>
+    <string name="network_error">No Internet Connection</string>
+    <string name="empty_name">Enter Your Name</string>
+    <string name="empty_firstname">Enter First Name</string>
+    <string name="empty_lastname">Enter Last Name</string>
+    <string name="empty_mobilenum">Enter Mobile Number</string>
+    <string name="invalid_mobilenum">Enter Valid Mobile Number</string>
+    <string name="empty_qualification">Enter Qualification</string>
+    <string name="empty_address">Enter Address</string>
+    <string name="empty_city">Enter City</string>
+    <string name="empty_zip_code">Enter Zip Code</string>
+    <string name="empty_state">Enter State</string>
+    <string name="empty_country">Enter Country</string>
+    <string name="unexpected_error">Unexpected Errors</string>
+    <string name="permission">It seems that some permission for ACH has not granted. Please give all the required permission to enjoy ACH features.</string>
+    <string name="selectstorage">CHOOSE THE SOURCE</string>
+    <string name="upload_certificate">Certificate is not uploaded</string>
+</resources>

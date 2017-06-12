@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <com.ebabu.ach.customview.CustomEditText
+                android:id="@+id/et_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/user"
+                android:drawablePadding="15dp"
+                android:hint="First Name"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.ach.customview.CustomEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/address"
+                android:drawablePadding="15dp"
+                android:hint="Shipping Address"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.ach.customview.CustomEditText
+                android:id="@+id/et_zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/zip_code"
+                android:drawablePadding="15dp"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.ach.customview.CustomEditText
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/city"
+                android:drawablePadding="15dp"
+                android:hint="City"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.ach.customview.CustomEditText
+                android:id="@+id/et_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/state"
+                android:drawablePadding="15dp"
+                android:hint="State"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.ach.customview.CustomEditText
+                android:id="@+id/et_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/country"
+                android:drawablePadding="15dp"
+                android:hint="Country"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.ebabu.ach.customview.CustomTextView
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:background="@color/accentColor"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:edittextfont="ROBOTO-BOLD.TTF" />
+</LinearLayout>

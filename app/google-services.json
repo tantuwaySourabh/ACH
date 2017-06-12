@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "739236685081",
+    "firebase_url": "https://aarogya-clinical-homeopathy.firebaseio.com",
+    "project_id": "aarogya-clinical-homeopathy",
+    "storage_bucket": "aarogya-clinical-homeopathy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739236685081:android:dc66acd2267474e9",
+        "android_client_info": {
+          "package_name": "com.ebabu.ach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739236685081-thp9eca5jn2dtumq028b8pgs34bqoac0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGKgpOyNgNnQ2USoTUAzArYYjDR7NcsyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

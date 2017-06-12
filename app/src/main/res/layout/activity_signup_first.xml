@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <include layout="@layout/layout_toolbar" />
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btn_profile_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/primary_color_circle"
+            android:padding="2dp"
+            android:src="@mipmap/profile_pic" />
+
+        <com.ebabu.ach.customview.CustomEditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="15dp"
+            android:hint="First name"
+            android:inputType="textCapWords"
+            android:outlineProvider="none"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:text="vimal"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.ach.customview.CustomEditText
+            android:id="@+id/et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="15dp"
+            android:hint="Last Name"
+            android:text="kumar"
+            android:inputType="textCapWords"
+            android:outlineProvider="none"
+            android:padding="13dp"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.ach.customview.CustomEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@mipmap/email"
+            android:drawablePadding="15dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:outlineProvider="none"
+            android:padding="13dp"
+            android:text="kumarvimal@yahoo.com"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.ach.customview.CustomEditText
+            android:id="@+id/et_mobile_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@mipmap/mobile"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:outlineProvider="none"
+            android:padding="13dp"
+            android:maxLength="10"
+            android:text="9876543210"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.ach.customview.CustomEditText
+            android:id="@+id/et_qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@mipmap/qualification"
+            android:drawablePadding="15dp"
+            android:hint="Qualification"
+            android:inputType="text"
+            android:outlineProvider="none"
+            android:padding="13dp"
+            android:text="MBBS"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.ach.customview.CustomTextView
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/primary_color_rounded_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-BOLD.TTF" />
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

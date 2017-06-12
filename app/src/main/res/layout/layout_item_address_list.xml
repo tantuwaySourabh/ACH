@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_addresslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <com.ebabu.ach.customview.CustomTextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sahitya Jain "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-BOLD.TTF" />
+
+
+            <com.ebabu.ach.customview.CustomTextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="8982223573"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.ach.customview.CustomTextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="616,Shekhar central, Palasia square, Indore, MP-452001"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_delete_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@mipmap/delete" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

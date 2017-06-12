@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray_color"
+                android:elevation="2dp"
+                android:orientation="horizontal">
+
+                <com.ebabu.ach.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="DELIVERY ADDRESS"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="16sp"
+                    app:edittextfont="ROBOTO-MEDIUM.TTF" />
+
+                <com.ebabu.ach.customview.CustomTextView
+                    android:id="@+id/btn_change_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="CHANGE ADDRESS"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:edittextfont="ROBOTO-MEDIUM.TTF" />
+
+                <com.ebabu.ach.customview.CustomTextView
+                    android:id="@+id/btn_add_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="ADD ADDRESS"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-MEDIUM.TTF" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_shipping_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.ebabu.ach.customview.CustomTextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sahitya Jain "
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-BOLD.TTF" />
+
+                    <com.ebabu.ach.customview.CustomTextView
+                        android:id="@+id/txt_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+                    <com.ebabu.ach.customview.CustomTextView
+                        android:id="@+id/txt_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="616,Shekhar central, Palasia square, Indore, MP-452001"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <com.ebabu.ach.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray_color"
+                android:elevation="2dp"
+                android:padding="10dp"
+                android:text="PRICE DETAIL"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-MEDIUM.TTF" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="1">
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total MRP"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:id="@+id/txt_total_mrp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="SubTotal"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+
+                    </LinearLayout>
+
+
+<!--
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/secondary_text_color" />
+
+--><!--
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="1">
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Dicounted Price"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:id="@+id/txt_sub_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="SubTotal"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+
+                    </LinearLayout>
+-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="1">
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Shipping Charge"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:id="@+id/txt_shipping_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="SubTotal"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="1">
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Discount"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:id="@+id/txt_total_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="SubTotal"
+                            android:textColor="@color/text_gray_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+
+                    </LinearLayout>
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="1">
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total Amount"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:edittextfont="ROBOTO-BOLD.TTF" />
+
+                        <com.ebabu.ach.customview.CustomTextView
+                            android:id="@+id/txt_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="SubTotal"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:edittextfont="ROBOTO-BOLD.TTF" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <com.ebabu.ach.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_gray_color"
+                android:elevation="2dp"
+                android:padding="10dp"
+                android:text="PAYMENT METHOD"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-MEDIUM.TTF" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/payment_cod"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COD(Cash On Delivery)" />
+
+                    <RadioButton
+                        android:id="@+id/payment_online"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Online" />
+                </RadioGroup>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.ebabu.ach.customview.CustomTextView
+        android:id="@+id/btn_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/accentColor"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="PLACE ORDER"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:edittextfont="ROBOTO-BOLD.TTF" />
+
+</LinearLayout>

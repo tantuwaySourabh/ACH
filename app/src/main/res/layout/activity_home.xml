@@ -1,0 +1,67 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="80dp"
+                    android:src="@mipmap/medicine_clip" />
+
+                <com.ebabu.ach.customview.CustomEditText
+                    android:id="@+id/et_search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/white_rounded_rectangle_border"
+                    android:gravity="center"
+                    android:hint="Enter Medicin/ Dilution Name"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.ach.customview.CustomTextView
+                    android:id="@+id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/primary_color_rounded_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="SEARCH"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:edittextfont="ROBOTO-BOLD.TTF" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/layout_drawer_home" />
+</android.support.v4.widget.DrawerLayout>
